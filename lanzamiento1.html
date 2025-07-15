@@ -32,16 +32,22 @@ main {
 }
 
 .portada-wrapper {
-  flex: 1 1 320px;
-  max-width: 300px;
+  flex: 1 1 280px;      /* un poco más pequeña */
+  max-width: 280px;     /* ancho máximo menor */
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 30px #00eaffaa, 0 0 60px #00eaff44;
-  transition: transform 0.5s ease;
+  box-shadow:
+    0 6px 15px rgba(0, 234, 255, 0.35),
+    0 0 40px rgba(0, 234, 255, 0.25);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background: linear-gradient(135deg, #00eaff33, #00446633);
 }
 
 .portada-wrapper:hover {
-  transform: scale(1.03) rotate(-1deg);
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow:
+    0 10px 25px rgba(0, 234, 255, 0.6),
+    0 0 60px rgba(0, 234, 255, 0.4);
 }
 
 .imagen-portada {
@@ -50,11 +56,14 @@ main {
   object-fit: cover;
   image-rendering: crisp-edges;
   transition: filter 0.5s ease;
+  border-radius: 20px;
+  max-height: 320px;    /* altura máxima más pequeña */
 }
 
 .imagen-portada:hover {
   filter: brightness(1.2) contrast(1.1);
 }
+
 
 .info-wrapper {
   flex: 1 1 400px;
@@ -181,7 +190,7 @@ main {
   <section class="contenedor-cancion">
     <div class="contenido-flex">
       <div class="portada-wrapper">
-        <img src="../atuck-web/imagenes/imagenatuck.png" alt="Portada Como Fue" class="imagen-portada" />
+        <img src="/imagenes/imagenatuck.png" alt="Portada Como Fue" class="imagen-portada" />
       </div>
       <div class="info-wrapper">
         <div class="escuchar-wrapper">
