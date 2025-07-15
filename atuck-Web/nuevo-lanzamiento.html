@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ATUCK - Álbum PA ARRIBA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    main {
+      background: linear-gradient(135deg, #001f3f, #004466);
+      padding: 2rem 1rem 4rem;
+      min-height: 100vh;
+      color: #d0e9ff;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    main h2 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #00eaff;
+      text-shadow: 0 0 8px #00eaffaa;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #a0cfff;
+      text-shadow: 0 0 4px #004466bb;
+    }
+
+    .galeria-album {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .item-album {
+      flex: 1 1 calc(25% - 1.5rem);
+      max-width: calc(25% - 1.5rem);
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .item-album:hover,
+    .item-album:focus-within {
+      transform: scale(1.07);
+      z-index: 10;
+    }
+
+    .item-album a {
+      display: block;
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      padding: 8px;
+      background: transparent;
+      transition: filter 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 238, 255, 0.2);
+    }
+
+    .item-album img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      border: 5px solid;
+      border-image-slice: 1;
+      border-width: 5px;
+      border-image-source: linear-gradient(45deg, #00eaff, #004466, #00eaff);
+      box-shadow:
+        0 0 15px #00eaff55,
+        0 0 30px #00eaff33 inset;
+      transition: box-shadow 0.3s ease, border-image-source 1.5s ease;
+      background-color: #000a12;
+    }
+
+    .item-album img:hover {
+      box-shadow:
+        0 0 25px #00eaffaa,
+        0 0 50px #00eaffbb inset;
+      border-image-source: linear-gradient(90deg, #00ffff, #006699, #00ffff);
+    }
+
+    .item-album h3 {
+      margin-top: 0.6rem;
+      font-size: 1.3rem;
+      color: #ffffff;
+      text-shadow: 0 0 8px #ffffffcc;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .item-album {
+        flex: 1 1 calc(50% - 1.5rem);
+        max-width: calc(50% - 1.5rem);
+      }
+    }
+    @media (max-width: 500px) {
+      .item-album {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ATUCK</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="bio.html">Biografía</a></li>
+        <li><a href="lanzamientos.html">Lanzamientos</a></li>
+        <li><a href="conciertos.html">Conciertos</a></li>
+        <li><a href="batallas.html">Batallas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Álbum: PA ARRIBA</h2>
+    <p>Disfruta de todos los temas que forman parte del nuevo álbum de ATUCK, reunidos en un solo lugar.</p>
+
+    <section class="galeria-album" aria-label="Canciones del álbum PA ARRIBA">
+      <article class="item-album">
+        <a href="lanzamiento5.html">
+          <img src="../atuck-web/imagenes/noopineis.jpg" alt="NO OPINEIS" />
+          <h3>NO OPINEIS</h3>
+        </a>
+      </article>
+
+      <article class="item-album">
+        <a href="lanzamiento6.html">
+          <img src="../atuck-web/imagenes/METIENELOCO.JPG" alt="ME TIENE LOCO" />
+          <h3>ME TIENE LOCO</h3>
+        </a>
+      </article>
+
+      <article class="item-album">
+        <a href="lanzamiento7.html">
+          <img src="../atuck-web/imagenes/channels4_profile.jpg" alt="MILLONARIA" />
+          <h3>MILLONARIA</h3>
+        </a>
+      </article>
+
+      <article class="item-album">
+        <a href="lanzamiento8.html">
+          <img src="../atuck-web/imagenes/channels4_profile.jpg" alt="I'M THE ONE" />
+          <h3>I'M THE ONE</h3>
+        </a>
+      </article>
+
+      <article class="item-album">
+        <a href="lanzamiento9.html">
+          <img src="../atuck-web/imagenes/channels4_profile.jpg" alt="DIMELO" />
+          <h3>DIMELO</h3>
+        </a>
+      </article>
+
+      <article class="item-album">
+        <a href="lanzamiento10.html">
+          <img src="../atuck-web/imagenes/channels4_profile.jpg" alt="TAN LINDA" />
+          <h3>TAN LINDA</h3>
+        </a>
+      </article>
+
+      <article class="item-album">
+        <a href="lanzamiento11.html">
+          <img src="../atuck-web/imagenes/channels4_profile.jpg" alt="LOKOTRONA" />
+          <h3>LOKOTRONA</h3>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://open.spotify.com/artist/30QXa9i6mPSZRGW6hwDjP8" target="_blank" rel="noopener noreferrer">🎧 Spotify</a>
+      <a href="https://music.apple.com/es/artist/atuck/1481720430" target="_blank" rel="noopener noreferrer">🍎 Apple Music</a>
+      <a href="https://www.youtube.com/@ATUCK28" target="_blank" rel="noopener noreferrer">▶️ YouTube</a>
+      <a href="https://www.instagram.com/atuckreal?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+      <a href="https://www.tiktok.com/@atuck_music?_t=ZG-8t74WaRXu4X&_r=1" target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+    </div>
+    <p>© 2025 ATUCK. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

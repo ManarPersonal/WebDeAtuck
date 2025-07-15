@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ATUCK - Batallas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    main {
+      background: linear-gradient(135deg, #001f3f, #004466);
+      padding: 2rem 1rem 4rem;
+      min-height: 100vh;
+      color: #d0e9ff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    main h2 {
+      text-align: center;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 3rem;
+      color: #00eaff;
+      text-shadow: 0 0 8px #00eaffaa;
+      margin-bottom: 3rem;
+    }
+
+    .grid-batallas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .batalla-item {
+      background: rgba(0, 238, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 0 25px #00eaff44;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .batalla-item iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00eaff88;
+      border: none;
+      margin-bottom: 1rem;
+    }
+
+    .batalla-item h2,
+    .batalla-item h3 {
+      font-family: 'Bebas Neue', cursive;
+      color: #ffffff;
+      text-shadow: 0 0 12px #ffffffaa;
+      margin: 0.4rem 0;
+    }
+
+    .batalla-item p {
+      font-size: 1.1rem;
+      color: #d0e9ff;
+      text-shadow: 0 0 4px #004466bb;
+      margin: 0.4rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .social-links a {
+      margin: 0 0.8rem;
+      color: #00eaff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover,
+    .social-links a:focus {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffffaa;
+    }
+
+    footer p {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #a0cfff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ATUCK</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="bio.html">Biografía</a></li>
+        <li><a href="lanzamientos.html">Lanzamientos</a></li>
+        <li><a href="conciertos.html">Conciertos</a></li>
+        <li><a href="batallas.html" aria-current="page">Batallas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Batallas en Vivo</h2>
+
+    <div class="grid-batallas" aria-label="Listado de batallas">
+      <section class="batalla-item" aria-label="Batalla 1">
+        <iframe src="https://www.youtube.com/embed/IcOb4lwvyLs" title="Batalla 1" allowfullscreen></iframe>
+        <h2>WIKKY VS ATUCK</h2> 
+        <h3>DVS BATTLE</h3>
+        <p><strong>Fecha:</strong> 20 de abril 2023</p>
+        <p>Una batalla intensa con rimas afiladas y energía pura entre los mejores MCs de la escena.</p>
+      </section>
+
+      <section class="batalla-item" aria-label="Batalla 2">
+        <iframe src="https://www.youtube.com/embed/pemxm41xbBU" title="Batalla 2" allowfullscreen></iframe>
+        <h2>MURY VS ATUCK</h2>
+        <h3>DVS BATTLE</h3>
+        <p><strong>Fecha:</strong> 20 de abril 2023</p>
+        <p>Un duelo de ingenio y rapidez que dejó al público sin aliento.</p>
+      </section>
+
+      <section class="batalla-item" aria-label="Batalla 3">
+        <iframe src="https://www.youtube.com/embed/BZYMdGQQ8D4" title="Batalla 3" allowfullscreen></iframe>
+        <h2>SEINT VS ATUCK</h2>
+        <h3>DVS BATTLE</h3>
+        <h5>Dinastia festival</h5>
+        <p><strong>Fecha:</strong> 3 de diciembre 2024</p>
+        <p>La batalla más comentada del año, con un cierre espectacular.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://open.spotify.com/artist/30QXa9i6mPSZRGW6hwDjP8" target="_blank" rel="noopener noreferrer">🎧 Spotify</a>
+      <a href="https://music.apple.com/es/artist/atuck/1481720430" target="_blank" rel="noopener noreferrer">🍎 Apple Music</a>
+      <a href="https://www.youtube.com/@ATUCK28" target="_blank" rel="noopener noreferrer">▶️ YouTube</a>
+      <a href="https://www.instagram.com/atuckreal?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+      <a href="https://www.tiktok.com/@atuck_music?_t=ZG-8t74WaRXu4X&_r=1" target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+    </div>
+    <p>© 2025 ATUCK. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
