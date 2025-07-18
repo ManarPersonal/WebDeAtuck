@@ -21,7 +21,7 @@ header {
   position: relative;
   text-align: center;
   padding: 3em 1em 2em;
-  background-image: url('imagenes/imagenfondo.JPG');
+  background-image: url('imagenes/imagenfondo.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
